@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Word
+  - Gate
+  - Gate2
+  - Gate3
+  - Word2
+  - Word3
   layers:
   - Default
   - TransparentFX
