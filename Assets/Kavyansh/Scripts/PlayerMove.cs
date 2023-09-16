@@ -19,11 +19,11 @@ public class PlayerMove : MonoBehaviour
         float Yinput = Input.GetAxisRaw("Vertical");
         if (Xinput > 0)
         {
-            transform.position += new Vector3(_speed * Time.deltaTime, 0, 0);
+            transform.Translate(new Vector3(_speed * Time.deltaTime, 0, 0));
         }
         else if (Xinput < 0)
         {
-            transform.position += new Vector3(-_speed * Time.deltaTime, 0, 0);
+            transform.Translate(new Vector3(-_speed * Time.deltaTime, 0, 0));
         }
         else
         {
@@ -32,11 +32,11 @@ public class PlayerMove : MonoBehaviour
 
         if (Yinput > 0)
         {
-            transform.position += new Vector3(0, _speed * Time.deltaTime, 0);
+            transform.Translate(new Vector3(0, _speed * Time.deltaTime, 0));
         }
         else if (Yinput < 0)
         {
-            transform.position += new Vector3(0, -_speed * Time.deltaTime, 0);
+            transform.Translate(new Vector3(0, -_speed * Time.deltaTime, 0));
         }
         else
         {
