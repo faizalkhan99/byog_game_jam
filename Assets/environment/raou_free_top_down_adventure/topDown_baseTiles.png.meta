@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -10336,6 +10336,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: decoded_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 322
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4443c02c6edcb4eb012bb363ecd8fe
+      internalID: -2025184235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: decoded_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 322
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35c57d7ee6160647a28c9fd6eb772ed
+      internalID: -1329166112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: secret_lang_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6090bdfda32bc46a587737a07fa240
+      internalID: -1044319732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: secret_lang_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c0df9419a7f1dd4796e0e6b8790766c
+      internalID: 1127247288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -10356,6 +10440,8 @@ TextureImporter:
       beech_me_ret_7: -1828324594
       beech_me_ret_8: -370753140
       beech_me_ret_9: 401758788
+      decoded_2: -2025184235
+      decoded_7: -1329166112
       flat_rooftop_1: 927458667
       flat_rooftop_2: 64340277
       flat_rooftop_3: -1400413401
@@ -10438,6 +10524,8 @@ TextureImporter:
       ret_me_pani_6: -1005688837
       ret_me_pani_7: 624436889
       ret_me_pani_8: -174735737
+      secret_lang_2: 1127247288
+      secret_lang_7: -1264612184
       side_roof_1: 1850156683
       side_roof_2: 2085365120
       side_roof_3: -634118485
@@ -10937,7 +11025,6 @@ TextureImporter:
       topDown_baseTiles_77: 21962819
       topDown_baseTiles_78: -21571564
       topDown_baseTiles_79: -132274139
-      topDown_baseTiles_8: -1264612184
       topDown_baseTiles_80: -1753092292
       topDown_baseTiles_81: 974658250
       topDown_baseTiles_82: 144732997
