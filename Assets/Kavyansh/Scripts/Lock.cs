@@ -13,6 +13,14 @@ public class Lock : MonoBehaviour
                 {
                     if (_lookingFor == _pm._keyValue)
                     {
+                        if(_pm._keyValue == "1")
+                        {
+                            SecretRoom.key1 = true;
+                        }
+                        if(_pm._keyValue == "2")
+                        {
+                            SecretRoom.key2 = true;
+                        }
                         _pm._hasKey = false;
                         Destroy(_pm._key);
                     }
