@@ -1,46 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 public class PlayerMove : MonoBehaviour
 {
+    Rigidbody2D rb;
+
+    public bool _hasKey;
+    public string _keyValue;
+    public GameObject _key;
+
     [SerializeField] float _speed;
-    [SerializeField] string _code = "Kavyansh";
-    [SerializeField] string _InputCode;
-    [SerializeField] bool _Iscode;
-    // Update is called once per frame
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
     void Update()
     {
         Movement();
     }
     void Movement()
     {
-        float Xinput = Input.GetAxisRaw("Horizontal");
-        float Yinput = Input.GetAxisRaw("Vertical");
-        if (Xinput > 0)
-        {
-            transform.Translate(new Vector3(_speed * Time.deltaTime, 0, 0));
-        }
-        else if (Xinput < 0)
-        {
-            transform.Translate(new Vector3(-_speed * Time.deltaTime, 0, 0));
-        }
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+        Vector2 direction = new Vector2(horizontalInput, verticalInput).normalized;
+        if (direction.magnitude > 0)
+            rb.velocity = direction * _speed;
         else
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 0);
-        }
-
-        if (Yinput > 0)
-        {
-            transform.Translate(new Vector3(0, _speed * Time.deltaTime, 0));
-        }
-        else if (Yinput < 0)
-        {
-            transform.Translate(new Vector3(0, -_speed * Time.deltaTime, 0));
-        }
-        else
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, 0);
-        }
+            rb.velocity = Vector2.zero;
     }
 }

@@ -4,12 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Word2
-  - Gate3
-  - Word3
-  - Gate
-  - Gate2
-  - Word
+  - Lock
+  - Key
   layers:
   - Default
   - TransparentFX
