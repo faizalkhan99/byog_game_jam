@@ -3,6 +3,7 @@ public class PlayerMove : MonoBehaviour
 {
     Rigidbody2D rb;
 
+    public bool _canMove;
     public bool _hasKey;
     public string _keyValue;
     public GameObject _key;
@@ -13,8 +14,17 @@ public class PlayerMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
+    private void Start()
+    {
+        _canMove = true;
+    }
     void Update()
     {
+        if (!_canMove)
+        {
+            rb.velocity = Vector2.zero;
+            return;
+        }
         Movement();
     }
     void Movement()
