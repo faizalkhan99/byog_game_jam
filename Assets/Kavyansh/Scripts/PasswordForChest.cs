@@ -6,16 +6,22 @@ public class PasswordForChest : MonoBehaviour
 {
     [SerializeField] TMP_InputField _passwordThatwillPlayerPut;
     [SerializeField] GameObject _inputField;
-    [SerializeField] GameObject _submitButton;
+    [SerializeField] GameObject _submitButton , key;
     [SerializeField] string _actualPassword;
 
     public void PasswordSystem()
     {
-        if(_passwordThatwillPlayerPut.text == _actualPassword)
+        if (gameObject != null)
         {
-            _inputField.SetActive(false);
-            _submitButton.SetActive(false);
+            if (_passwordThatwillPlayerPut.text == _actualPassword)
+            {
+                _inputField.SetActive(false);
+                _submitButton.SetActive(false);
+                key.SetActive(true);
+                Destroy(gameObject);
+            }
         }
+        
         _passwordThatwillPlayerPut.text = string.Empty;
     }
 }

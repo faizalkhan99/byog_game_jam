@@ -207,7 +207,7 @@ TextureImporter:
         width: 16
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,6 +215,69 @@ TextureImporter:
       bones: []
       spriteID: 55d600fbb13426d4db8eb9fa3ef18689
       internalID: -1742450544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44953bc365ae7524d92d7137118b46ec
+      internalID: 628594282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 140
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4beb1ed63e44446801499ba430fb84
+      internalID: -1098180173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54280e9b5b7173e498ef2a7f32996dfc
+      internalID: -1134107030
       vertices: []
       indices: 
       edges: []
@@ -234,6 +297,9 @@ TextureImporter:
       DADA: -1742450544
       FUFA: -1709627319
       Pata nhi: -313101418
+      tileset_0: 628594282
+      tileset_1: -1098180173
+      tileset_2: -1134107030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

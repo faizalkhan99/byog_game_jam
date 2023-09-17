@@ -9,9 +9,16 @@ public class Key : MonoBehaviour
             PlayerMove _pm = other.gameObject.GetComponent<PlayerMove>();
             if (_pm != null)
             {
-                _pm._hasKey = true;
-                _pm._keyValue = _pass;
-                _pm._key = gameObject;
+                if (!_pm._hasKey)
+                {
+                    _pm._hasKey = true;
+                    _pm._keyValue = _pass;
+                    _pm._key = gameObject;
+                }
+                else
+                {
+                    return;
+                }
             }
             transform.parent = other.gameObject.transform;
             GetComponent<Collider2D>().enabled = false;
