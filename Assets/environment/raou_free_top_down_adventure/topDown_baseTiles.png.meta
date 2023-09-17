@@ -7061,7 +7061,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDown_baseTiles_332
+      name: TREE_1
       rect:
         serializedVersion: 2
         x: 0
@@ -7082,7 +7082,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDown_baseTiles_333
+      name: tree_2
       rect:
         serializedVersion: 2
         x: 48
@@ -7250,7 +7250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDown_baseTiles_362
+      name: tree_3
       rect:
         serializedVersion: 2
         x: 0
@@ -7271,7 +7271,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDown_baseTiles_365
+      name: tree_4
       rect:
         serializedVersion: 2
         x: 48
@@ -7733,7 +7733,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDown_baseTiles_488
+      name: barrel_top
       rect:
         serializedVersion: 2
         x: 144
@@ -7754,7 +7754,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDown_baseTiles_489
+      name: log_top
       rect:
         serializedVersion: 2
         x: 160
@@ -7964,7 +7964,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDown_baseTiles_499
+      name: barrel-bottom
       rect:
         serializedVersion: 2
         x: 144
@@ -7985,7 +7985,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDown_baseTiles_500
+      name: log_bottom
       rect:
         serializedVersion: 2
         x: 160
@@ -8006,7 +8006,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topDown_baseTiles_501
+      name: small logs
       rect:
         serializedVersion: 2
         x: 176
@@ -10473,6 +10473,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      TREE_1: -2114347560
+      barrel-bottom: 1011143281
+      barrel_top: 890390379
       beech_me_ret_1: 1694931085
       beech_me_ret_2: -2109961956
       beech_me_ret_3: -2010930248
@@ -10538,6 +10541,8 @@ TextureImporter:
       leher: 400208925
       letter_star: 327355581
       lock_stone: -567934397
+      log_bottom: 1939869120
+      log_top: -744814663
       medium_roof_1: -172749031
       medium_roof_10: 52425925
       medium_roof_11: 770600191
@@ -10579,6 +10584,7 @@ TextureImporter:
       side_roof_7: -828624079
       side_roof_8: -1906181212
       side_roof_9: 1690478611
+      small logs: -1443681673
       small_front_roof_1: 1899727077
       small_front_roof_10: -532810360
       small_front_roof_2: -1986421286
@@ -10819,8 +10825,6 @@ TextureImporter:
       topDown_baseTiles_33: -404927041
       topDown_baseTiles_330: 133990314
       topDown_baseTiles_331: -2117569543
-      topDown_baseTiles_332: -2114347560
-      topDown_baseTiles_333: 1743470967
       topDown_baseTiles_334: -1179915867
       topDown_baseTiles_335: 1663834933
       topDown_baseTiles_336: -1166617427
@@ -10852,10 +10856,8 @@ TextureImporter:
       topDown_baseTiles_36: 973326681
       topDown_baseTiles_360: -1905001172
       topDown_baseTiles_361: 1147425533
-      topDown_baseTiles_362: -513114174
       topDown_baseTiles_363: -1245243634
       topDown_baseTiles_364: -375390406
-      topDown_baseTiles_365: 1030763688
       topDown_baseTiles_366: 1707342390
       topDown_baseTiles_367: -1014398208
       topDown_baseTiles_368: 1522269005
@@ -10972,8 +10974,6 @@ TextureImporter:
       topDown_baseTiles_485: 1337672543
       topDown_baseTiles_486: 1901254269
       topDown_baseTiles_487: 1384042545
-      topDown_baseTiles_488: 890390379
-      topDown_baseTiles_489: -744814663
       topDown_baseTiles_49: -583859136
       topDown_baseTiles_490: -679337031
       topDown_baseTiles_491: 564071681
@@ -10984,11 +10984,8 @@ TextureImporter:
       topDown_baseTiles_496: -761732376
       topDown_baseTiles_497: -1301919872
       topDown_baseTiles_498: 1951692174
-      topDown_baseTiles_499: 1011143281
       topDown_baseTiles_5: 1426318521
       topDown_baseTiles_50: -474495364
-      topDown_baseTiles_500: 1939869120
-      topDown_baseTiles_501: -1443681673
       topDown_baseTiles_502: -670897440
       topDown_baseTiles_503: -1260921108
       topDown_baseTiles_504: 1494533158
@@ -11090,6 +11087,9 @@ TextureImporter:
       topDown_baseTiles_97: 2069765535
       topDown_baseTiles_98: -121515163
       topDown_baseTiles_99: 839911214
+      tree_2: 1743470967
+      tree_3: -513114174
+      tree_4: 1030763688
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
