@@ -33,8 +33,20 @@ public class PlayerMove : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         Vector2 direction = new Vector2(horizontalInput, verticalInput).normalized;
         if (direction.magnitude > 0)
+        {
             rb.velocity = direction * _speed;
+            if (direction.x > 0)
+            {
+                transform.localScale = new Vector2(1, 1);
+            }
+            else if (direction.x < 0)
+            {
+                transform.localScale = new Vector2(-1, 1);
+            }
+        }
         else
+        {
             rb.velocity = Vector2.zero;
+        }
     }
 }

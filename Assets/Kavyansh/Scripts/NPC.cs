@@ -54,6 +54,15 @@ public class NPC : MonoBehaviour
             if (_lockPlayer)
             {
                 _pm.transform.localPosition = Vector2.MoveTowards(_pm.transform.localPosition,GetComponent<Collider2D>().offset, Time.deltaTime * 2);
+                Vector2 dir = transform.position - _pm.transform.position;
+                if (dir.x > 0)
+                {
+                    _pm.transform.localScale = new Vector2(1, 1);
+                }
+                else if (dir.x < 0)
+                {
+                    _pm.transform.localScale = new Vector2(-1, 1);
+                }
             }
         }
     }
