@@ -10,18 +10,16 @@ public class MainMenu : MonoBehaviour
     [SerializeField] Slider _loader;
     [SerializeField] TextMeshProUGUI _loading_txt;
 
-    private void Start()
-    {
-        _mainmenuScreen.SetActive(true);
-        _creditsScreen.SetActive(false);
-        _loadingScreen.SetActive(false);
-    }
     #region Main menu
     public void Play(string Level)
     {
         _mainmenuScreen.SetActive(false);
         _loadingScreen.SetActive(true);
         StartCoroutine(SceneLoader(Level));
+    }
+    public void PlayLevel(string Level)
+    {
+        SceneManager.LoadScene(Level);
     }
 
     public void Credits()
