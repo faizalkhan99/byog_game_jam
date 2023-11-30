@@ -29,11 +29,11 @@ public class AudioManager : MonoBehaviour
         _BGM.clip = audio;
         _BGM.PlayDelayed(0.5f);
     }
-    public void PauseMainBGM()
+    public void PauseBGM()
     {
         _BGM.Pause();
     }
-    public void UnPauseGBM()
+    public void UnPauseBGM()
     {
         _BGM.UnPause();
     }    

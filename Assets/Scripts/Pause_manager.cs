@@ -19,12 +19,14 @@ public class Pause_manager : MonoBehaviour
     public void GamePause()
     {
         Time.timeScale = 0;
+        AudioManager.Instance.PauseBGM();
         _pauseScreen.SetActive(true);
         _pauseButton.SetActive(false);
     }
     public void Resume()
     {
         Time.timeScale = 1; 
+        AudioManager.Instance.UnPauseBGM();
         _pauseScreen.SetActive(false);
         _pauseButton.SetActive(true);
     }
