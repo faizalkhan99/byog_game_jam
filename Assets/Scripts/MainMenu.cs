@@ -13,8 +13,8 @@ public class MainMenu : MonoBehaviour
     #region Main menu
     public void Play(string Level)
     {
-        _mainmenuScreen.SetActive(false);
-        _loadingScreen.SetActive(true);
+        if(_mainmenuScreen != null) _mainmenuScreen.SetActive(false);
+        if(_loadingScreen != null) _loadingScreen.SetActive(true);
         StartCoroutine(SceneLoader(Level));
     }
     public void PlayLevel(string Level)
@@ -24,19 +24,18 @@ public class MainMenu : MonoBehaviour
 
     public void Credits()
     {
-        _mainmenuScreen.SetActive(false);
-        _creditsScreen.SetActive(true);
+        if (_mainmenuScreen != null) _mainmenuScreen.SetActive(false);
+        if (_creditsScreen != null) _creditsScreen.SetActive(true);
     }
     public void Back_Button()
     {
-        _creditsScreen.SetActive(false);
-        _mainmenuScreen.SetActive(true);
+        if (_creditsScreen != null) _creditsScreen.SetActive(false);
+        if (_mainmenuScreen != null) _mainmenuScreen.SetActive(true);
     }
 
     public void Quit()
     {
         Application.Quit();
-        Debug.Log("Quit");
     }
 
     IEnumerator SceneLoader(string Level)
@@ -48,6 +47,7 @@ public class MainMenu : MonoBehaviour
             float progress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
             _loader.value = progress;
             _loading_txt.text  = (int)progress * 100f + " %";
+            Time.timeScale = 1.0f;
             yield return null;
         }
     }

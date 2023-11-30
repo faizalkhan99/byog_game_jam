@@ -12,7 +12,7 @@ public class Letter : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && (_letter))
         {
             _letter.SetActive(false);
         }

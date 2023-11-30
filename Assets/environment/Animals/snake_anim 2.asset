@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
-  m_Name: deer_anim
+  m_Name: snake_anim 2
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: 1644628762, guid: 951cbab14bdf9f94d8d8d29780fa9a48, type: 3}
-  - {fileID: 67594578, guid: 951cbab14bdf9f94d8d8d29780fa9a48, type: 3}
-  m_MinSpeed: 4
-  m_MaxSpeed: 4
+  - {fileID: 1168600761, guid: 951cbab14bdf9f94d8d8d29780fa9a48, type: 3}
+  - {fileID: 1904104295, guid: 951cbab14bdf9f94d8d8d29780fa9a48, type: 3}
+  - {fileID: -488860423, guid: 951cbab14bdf9f94d8d8d29780fa9a48, type: 3}
+  - {fileID: 876831541, guid: 951cbab14bdf9f94d8d8d29780fa9a48, type: 3}
+  m_MinSpeed: 3
+  m_MaxSpeed: 5
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
   m_TileColliderType: 1

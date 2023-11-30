@@ -4,6 +4,7 @@ public class CameraFollow : MonoBehaviour
     GameObject _player;
     [Range(0, 100)]
     [SerializeField] int _laziness;
+
     [SerializeField] Vector3 _offset;
     private void Awake()
     {

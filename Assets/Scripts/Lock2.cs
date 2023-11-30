@@ -1,5 +1,6 @@
 using UnityEngine;
-public class Lock : MonoBehaviour
+public class Lock2
+    : MonoBehaviour
 {
     public string _lookingFor;
     private void OnCollisionEnter2D(Collision2D other)
@@ -16,6 +17,7 @@ public class Lock : MonoBehaviour
                         if(_pm._keyValue == "1")
                         {
                             SecretRoom.key1 = true;
+                            
                         }
                         if(_pm._keyValue == "2")
                         {
