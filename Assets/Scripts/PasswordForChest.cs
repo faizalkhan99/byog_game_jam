@@ -8,6 +8,8 @@ public class PasswordForChest : MonoBehaviour
     [SerializeField] GameObject _inputField;
     [SerializeField] GameObject _submitButton , key;
     [SerializeField] string _actualPassword;
+    [SerializeField] private AudioClip _KeyDrop;
+
 
     public void PasswordSystem()
     {
@@ -18,7 +20,7 @@ public class PasswordForChest : MonoBehaviour
                 _inputField.SetActive(false);
                 _submitButton.SetActive(false);
                 key.SetActive(true);
-                AudioManager.Instance.KeySound();
+                AudioManager.Instance.OneShotPlay(_KeyDrop);
                 Destroy(gameObject);
             }
         }

@@ -5,6 +5,8 @@ public class SecretRoom : MonoBehaviour
     public static bool key1;
     public static bool key2;
     [SerializeField] GameObject secretDoor;
+    [SerializeField] private AudioClip _BothkeysCollected;
+    private int _counter = 0;
 
     private void Start()
     {
@@ -15,10 +17,11 @@ public class SecretRoom : MonoBehaviour
     }
     private void Update()
     {
-        if (key1 && key2) 
+        if (key1 && key2 && _counter == 0) 
         {
-            AudioManager.Instance.HaveBothKeys();
+            AudioManager.Instance.OneShotPlay(_BothkeysCollected);
             secretDoor.SetActive(true);
+            _counter = 1;
         }
     }
 }

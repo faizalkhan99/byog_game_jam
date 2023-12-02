@@ -5,6 +5,7 @@ public class Key2Summoner : MonoBehaviour
     [SerializeField] GameObject box2;
     [SerializeField] GameObject box3;
     [SerializeField] GameObject key2;
+    [SerializeField] private AudioClip _KeyDrop;
     private int _counter = 0;
     private void Update()
     {
@@ -12,7 +13,7 @@ public class Key2Summoner : MonoBehaviour
         {
             if(key2 != null && _counter == 0)
             {
-                AudioManager.Instance.KeySound();
+                AudioManager.Instance.OneShotPlay(_KeyDrop);
                 key2.SetActive(true);
                 _counter = 1;
             }
