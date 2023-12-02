@@ -7,11 +7,13 @@ public class PlayerMove : MonoBehaviour
     public bool _hasKey;
     public string _keyValue;
     public GameObject _key;
+    private Animator _animator;
 
     [SerializeField] float _speed;
 
     private void Awake()
     {
+        _animator = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
     private void Start()
@@ -34,6 +36,7 @@ public class PlayerMove : MonoBehaviour
         Vector2 direction = new Vector2(horizontalInput, verticalInput).normalized;
         if (direction.magnitude > 0)
         {
+            _animator.SetBool("walk", true);
             rb.velocity = direction * _speed;
             if (direction.x > 0)
             {
@@ -46,6 +49,7 @@ public class PlayerMove : MonoBehaviour
         }
         else
         {
+            _animator.SetBool("walk", false);
             rb.velocity = Vector2.zero;
         }
     }

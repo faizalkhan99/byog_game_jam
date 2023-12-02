@@ -17,6 +17,7 @@ public class SecretRoom : MonoBehaviour
     {
         if (key1 && key2) 
         {
+            AudioManager.Instance.HaveBothKeys();
             secretDoor.SetActive(true);
         }
     }

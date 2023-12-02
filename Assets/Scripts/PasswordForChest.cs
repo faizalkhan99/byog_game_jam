@@ -18,6 +18,7 @@ public class PasswordForChest : MonoBehaviour
                 _inputField.SetActive(false);
                 _submitButton.SetActive(false);
                 key.SetActive(true);
+                AudioManager.Instance.KeySound();
                 Destroy(gameObject);
             }
         }
