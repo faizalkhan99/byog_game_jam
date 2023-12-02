@@ -23,6 +23,7 @@ public class PasswordForChest : MonoBehaviour
                 AudioManager.Instance.OneShotPlay(_KeyDrop);
                 Destroy(gameObject);
             }
+
         }
         
         _passwordThatwillPlayerPut.text = string.Empty;

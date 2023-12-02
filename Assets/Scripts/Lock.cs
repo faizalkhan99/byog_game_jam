@@ -1,7 +1,16 @@
+using TMPro;
 using UnityEngine;
 public class Lock : MonoBehaviour
 {
     public string _lookingFor;
+    private int _txtLock = 0;
+    [SerializeField] private TextMeshProUGUI _needKeys;
+    [SerializeField] private GameObject _arrowImg;
+    private void Start()
+    {
+        _arrowImg.SetActive(false);
+        _needKeys.text = "";
+    }
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -26,10 +35,33 @@ public class Lock : MonoBehaviour
                             _pm._key.transform.position = transform.position;
                         }
                         _pm._hasKey = false;
-                        //Destroy(_pm._key);
                     }
                 }
             }
         }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        PlayerMove _pm = other.gameObject.GetComponent<PlayerMove>();
+        if (other.CompareTag("Player") && (!_pm._hasKey) && (_txtLock == 0)){
+            _needKeys.text = "Need something to put in these maybe?";
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        PlayerMove _pm = other.gameObject.GetComponent<PlayerMove>();
+        if (other.CompareTag("Player") && (!_pm._hasKey))
+        {
+            _needKeys.text = "";
+        }
+    }
+    public void Updatetext(string txt)
+    {
+        _txtLock = 1; // _txtLock = 1
+        _needKeys.text = txt;
+    }
+    public void ShowArrow()
+    {
+        _arrowImg.SetActive(true);
     }
 }
